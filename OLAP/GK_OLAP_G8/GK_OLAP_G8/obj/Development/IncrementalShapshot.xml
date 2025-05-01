@@ -1,0 +1,89 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>GK_OLAP_G8</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>RarUUIuE+W5YxYqPQhzwh32Mhf4=10/8/2024 6:05:14 PM10/8/2024 6:05:14 PM</TimeStamp>
+        <ID>
+          <String>GK Schema_4_OLAP</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>68oRTvomYGBdo2deoUzPxqj4fwc=10/8/2024 6:05:31 PM10/8/2024 6:05:30 PM</TimeStamp>
+        <ID>
+          <String>GK Schema_VIEW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Kz6B7m0HJQhwIgtN7G1+KnPwndc=10/8/2024 6:06:18 PM10/8/2024 6:05:56 PM</TimeStamp>
+        <ID>
+          <String>Dim Pay</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>m+FtbYtArbg4kqigh2cUvxtFn/U=10/8/2024 6:06:27 PM10/8/2024 6:05:56 PM</TimeStamp>
+        <ID>
+          <String>Dim Worker</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>SkYjyFq3MytaIhvZympOooCHzZM=10/8/2024 6:06:36 PM10/8/2024 6:05:56 PM</TimeStamp>
+        <ID>
+          <String>Dim Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1WJdvQUJehM0qQdsUwH7cqguhJQ=10/8/2024 6:06:45 PM10/8/2024 6:05:56 PM</TimeStamp>
+        <ID>
+          <String>Dim Tile</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>AIk3HhlQDXjzO19R087Z4YyGiWg=10/8/2024 6:06:53 PM10/8/2024 6:05:56 PM</TimeStamp>
+        <ID>
+          <String>Dim Place</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>HlO07GiSaainwmsF5R+/NOxrcHo=10/8/2024 6:06:53 PM10/8/2024 6:05:55 PMMESxul9rlpDmIiWqYdIvRwSx1P0=10/8/2024 6:05:56 PM10/8/2024 6:05:55 PM</TimeStamp>
+        <ID>
+          <String>GK Schema_CUBE</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>+mClTaLe87VcCXArx+IjP7jLkkA=10/8/2024 6:04:24 PM10/8/2024 6:04:24 PM</TimeStamp>
+      <ID>
+        <String>GK_OLAP_G8</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-10-08T11:06:58.113333Z</LastDeployed>
+</DeploymentSnapshot>

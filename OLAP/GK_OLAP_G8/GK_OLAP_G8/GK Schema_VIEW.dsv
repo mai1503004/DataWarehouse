@@ -1,0 +1,209 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="53c696be-e0fe-4ea0-9f64-afb3631f7fdd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>GK Schema_VIEW</ID>
+  <Name>GK Schema_VIEW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>GK Schema_4_OLAP</DataSourceID>
+  <Schema>
+    <xs:schema id="GK_x0020_Schema_VIEW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="GK_x0020_Schema_VIEW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="e5050585-e9f6-48cf-82d5-b4991f3556c1">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Dim_Pay" msprop:DbTableName="Dim_Pay" msprop:FriendlyName="Dim_Pay" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="2195cfc9-eece-4a02-a9c6-72287d91bc7b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="pay_basis" msprop:FriendlyName="pay_basis" msprop:DbColumnName="pay_basis" msprop:design-time-name="a9440553-bdee-497e-8289-fecbff00bfa6" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="payID" msprop:FriendlyName="payID" msprop:DbColumnName="payID" msprop:design-time-name="283c284f-b86b-4bc6-83e6-feff4d25debf" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Place" msprop:DbTableName="Dim_Place" msprop:FriendlyName="Dim_Place" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="81de3291-ec02-4fc8-818f-c23613992fc6">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="work_location_borough" msprop:FriendlyName="work_location_borough" msprop:DbColumnName="work_location_borough" msprop:design-time-name="a0a35530-bce4-4a63-8045-3cfc3e615bae" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="placeID" msprop:FriendlyName="placeID" msprop:DbColumnName="placeID" msprop:design-time-name="a8440faa-0d14-47cc-bb3f-74252594930d" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Tile" msprop:DbTableName="Dim_Tile" msprop:FriendlyName="Dim_Tile" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="054b604a-4fbc-4d3c-a5b0-824cecf29576">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="title_description" msprop:FriendlyName="title_description" msprop:DbColumnName="title_description" msprop:design-time-name="fdec9623-ad01-4287-b906-60518aea19e5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="tileID" msprop:FriendlyName="tileID" msprop:DbColumnName="tileID" msprop:design-time-name="8f6c784b-d493-46da-b0a9-c98a00f60ce2" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Time" msprop:DbTableName="Dim_Time" msprop:FriendlyName="Dim_Time" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="198e3057-fb82-49f1-90f0-0808fe9edc71">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="agency_start_date" msprop:FriendlyName="agency_start_date" msprop:DbColumnName="agency_start_date" msprop:design-time-name="b089955f-8d36-4405-b81b-c8de1ecfb1e2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="timeID" msprop:FriendlyName="timeID" msprop:DbColumnName="timeID" msprop:design-time-name="b3904e4e-036f-438a-b0a3-4b2cd0b20f72" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Worker" msprop:DbTableName="Dim_Worker" msprop:FriendlyName="Dim_Worker" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="4f81b11d-6097-4f2f-b1ee-4c01bfe93949">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="member_id" msprop:FriendlyName="member_id" msprop:DbColumnName="member_id" msprop:design-time-name="55798e14-a766-4b75-80b7-945e83795d89" type="xs:int" />
+                  <xs:element name="last_name" msprop:FriendlyName="last_name" msprop:DbColumnName="last_name" msprop:design-time-name="e8099738-01be-4610-83f2-be7768b8812e" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="first_name" msprop:FriendlyName="first_name" msprop:DbColumnName="first_name" msprop:design-time-name="a14c50ad-6a6e-4b47-9bb5-6d2c180a5b17" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Payroll" msprop:DbTableName="Payroll" msprop:FriendlyName="Payroll" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="661df7a3-1f18-4e4c-9dc4-0b6a90ec7d15">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="member_id" msprop:FriendlyName="member_id" msprop:DbColumnName="member_id" msprop:design-time-name="c0e21927-053e-409d-b497-2d916f0cd37c" type="xs:int" minOccurs="0" />
+                  <xs:element name="timeID" msprop:FriendlyName="timeID" msprop:DbColumnName="timeID" msprop:design-time-name="ab8b2233-d1ac-4b49-a638-7171a3c69d2f" type="xs:int" minOccurs="0" />
+                  <xs:element name="placeID" msprop:FriendlyName="placeID" msprop:DbColumnName="placeID" msprop:design-time-name="4fc37ee8-5b47-41da-83f3-a1c9dd406ee6" type="xs:int" minOccurs="0" />
+                  <xs:element name="tileID" msprop:FriendlyName="tileID" msprop:DbColumnName="tileID" msprop:design-time-name="afd8c8ee-72b6-4d01-b76c-8bec430a47f3" type="xs:int" minOccurs="0" />
+                  <xs:element name="payID" msprop:FriendlyName="payID" msprop:DbColumnName="payID" msprop:design-time-name="755c0e32-04b2-4640-be2a-b02a139d356e" type="xs:int" minOccurs="0" />
+                  <xs:element name="base_salary" msprop:FriendlyName="base_salary" msprop:DbColumnName="base_salary" msprop:design-time-name="031d479d-c5ab-4adc-adfe-c7536e200f30" type="xs:double" minOccurs="0" />
+                  <xs:element name="regular_hours" msprop:FriendlyName="regular_hours" msprop:DbColumnName="regular_hours" msprop:design-time-name="50ff5a3e-c40c-4e83-b4be-f0ad99e88eab" type="xs:double" minOccurs="0" />
+                  <xs:element name="regular_hours1" msprop:FriendlyName="regular_hours1" msprop:DbColumnName="regular_hours1" msprop:design-time-name="c36fb2f3-30ca-408e-b63c-c9e0c7e2d52b" type="xs:double" minOccurs="0" />
+                  <xs:element name="ot_hours" msprop:FriendlyName="ot_hours" msprop:DbColumnName="ot_hours" msprop:design-time-name="0fb5f801-a6a7-4728-b22b-f39882d2c9a3" type="xs:double" minOccurs="0" />
+                  <xs:element name="total_ot_paid" msprop:FriendlyName="total_ot_paid" msprop:DbColumnName="total_ot_paid" msprop:design-time-name="aeb9c656-bd3a-45e7-b9d7-1b729ca16e73" type="xs:double" minOccurs="0" />
+                  <xs:element name="total_other_pay" msprop:FriendlyName="total_other_pay" msprop:DbColumnName="total_other_pay" msprop:design-time-name="8f329c05-dad3-47ee-83cd-0d9d25996802" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_sysdiagrams" msprop:DbTableName="sysdiagrams" msprop:FriendlyName="sysdiagrams" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="71d75e3d-1bc4-48d7-b3b2-34f18f592250">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="name" msprop:FriendlyName="name" msprop:DbColumnName="name" msprop:design-time-name="742b2bb4-b511-4f06-abdd-ab4ee6c539fa">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="128" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="principal_id" msprop:FriendlyName="principal_id" msprop:DbColumnName="principal_id" msprop:design-time-name="fc002fa1-137f-4fc0-8bcd-d203aacb137c" type="xs:int" />
+                  <xs:element name="diagram_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="diagram_id" msprop:DbColumnName="diagram_id" msprop:design-time-name="3bdaba41-37f4-43be-bd60-ecf345ce0ee4" type="xs:int" />
+                  <xs:element name="version" msprop:FriendlyName="version" msprop:DbColumnName="version" msprop:design-time-name="4bad4729-2094-4f6c-99b6-a431d82a17b5" type="xs:int" minOccurs="0" />
+                  <xs:element name="definition" msprop:DataSize="0" msprop:FriendlyName="definition" msprop:DbColumnName="definition" msprop:design-time-name="bdee6457-a7ed-447d-93a7-ff07b4c81a56" type="xs:base64Binary" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Pay" />
+          <xs:field xpath="payID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Place_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Place" />
+          <xs:field xpath="placeID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Tile_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Tile" />
+          <xs:field xpath="tileID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Time" />
+          <xs:field xpath="timeID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Worker_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Worker" />
+          <xs:field xpath="member_id" />
+        </xs:unique>
+        <xs:unique name="dbo_sysdiagrams_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_sysdiagrams" />
+          <xs:field xpath="diagram_id" />
+        </xs:unique>
+        <xs:keyref name="Payroll_Place" refer="dbo_Dim_Place_Constraint1">
+          <xs:selector xpath=".//dbo_Payroll" />
+          <xs:field xpath="placeID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Payroll_Tile" refer="dbo_Dim_Tile_Constraint1">
+          <xs:selector xpath=".//dbo_Payroll" />
+          <xs:field xpath="tileID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Payroll_Time" refer="dbo_Dim_Time_Constraint1">
+          <xs:selector xpath=".//dbo_Payroll" />
+          <xs:field xpath="timeID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Payroll_Worker" refer="dbo_Dim_Worker_Constraint1">
+          <xs:selector xpath=".//dbo_Payroll" />
+          <xs:field xpath="member_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_Payroll_Pay" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Payroll" />
+          <xs:field xpath="payID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <GK_x0020_Schema_VIEW xmlns="" />
+  </Schema>
+</DataSourceView>
