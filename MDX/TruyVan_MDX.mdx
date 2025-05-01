@@ -1,0 +1,59 @@
+﻿--Tổng lương cơ bản của từng vị trí công việc
+SELECT 
+	[Measures].[Base Salary] ON COLUMNS,
+	[Dim Tile].[Title Description].[Title Description] ON ROWS
+FROM [GK Schema_CUBE]
+
+--Tổng số các khoản tiền phải trả khác tại các địa điểm làm việc.
+SELECT 
+	[Measures].[Total Other Pay] ON COLUMNS,
+	NONEMPTY ([Dim Place].[Work Location Borough].[Work Location Borough]) ON ROWS
+FROM [GK Schema_CUBE]
+
+-- Tổng số tiền cho giờ làm thông thường theo từng địa điểm làm việc
+SELECT 
+  [Measures].[Regular Hours] ON COLUMNS,
+  NONEMPTY ([Dim Place].[Work Location Borough].[Work Location Borough]) ON ROWS
+FROM [GK Schema_CUBE]
+
+--Tổng lương cơ bản của "[ARCHITECT]" tại địa điểm khác nhau.
+SELECT 
+  [Measures].[Base Salary] ON COLUMNS,
+  NONEMPTY ([Dim Place].[Work Location Borough].[Work Location Borough]) ON ROWS
+FROM [GK Schema_CUBE]
+WHERE [Dim Tile].[Title Description].&[ARCHITECT]
+
+-- Số tiền trả theo giờ và số tiền phải trả cho việc làm  thêm giờ của từng địa điểm làm việc
+SELECT 
+	NONEMPTY ([Dim Place].[Work Location Borough].[Work Location Borough]) ON COLUMNS,
+	{[Measures].[Ot Hours],[Total Ot Paid]} ON ROWS
+FROM [GK Schema_CUBE]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
