@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "GK_schema_G8", "GK_schema_G8.dtproj", "{9F666BBE-F8A2-4E2B-A883-8D4B36BAAE45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F666BBE-F8A2-4E2B-A883-8D4B36BAAE45}.Development|Default.ActiveCfg = Development
+		{9F666BBE-F8A2-4E2B-A883-8D4B36BAAE45}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B39EEFB7-3D04-4647-A663-1C23BCF13FA2}
+	EndGlobalSection
+EndGlobal
